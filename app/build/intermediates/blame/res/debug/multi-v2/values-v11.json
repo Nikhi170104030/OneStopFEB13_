@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/home/nicky/.gradle/caches/transforms-1/files-1.1/adal-1.14.1.aar/b416d01ab4ab71e3f798a7a00e8b3dbb/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "187"
+                    }
+                }
+            ]
+        }
+    ]
+}

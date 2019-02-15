@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">OneStop</string>
+    <string name="welcome_text">Welcome, </string>
+    <string name="loading">Getting data from Graph...</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="enter_title">Enter Title</string>
+    <string-array name="ferry">
+
+        <item>7:30 am</item>
+        <item>7:40 am</item>
+        <item>8:45 am</item>
+        <item>9:45 am</item>
+        <item>11:30 am</item>
+        <item>1:00 pm</item>
+        <item>2:30 pm</item>
+        <item>3:30 pm</item>
+        <item>5:00 pm</item>
+        <item>6:15 pm</item>
+        <item>7:45 pm</item>
+        <item>SUNDAY</item>
+        <item>8:45 am</item>
+        <item>11:30 am</item>
+        <item>2:30 pm</item>
+        <item>5:30 pm</item>
+    </string-array>
+
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string-array name="club_boards">
+        <item>Sports Board</item>
+        <item>Cultural Board</item>
+        <item>Technical Board</item>
+    </string-array>
+    <string-array name="hostels">
+        <item>Manas</item>
+        <item>Brahmaputra</item>
+        <item>Dihing</item>
+        <item>Lohit</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_timings_activity">Timings_activity</string>
+    <string name="title_activity_mess__menu">Mess_Menu</string>
+    <string name="title_activity_internet_settings">Internet_settings</string>
+    <string name="title_activity_timetable">Timetable</string>
+    <string name="title_activity_about_us">AboutUs</string>
+
+</resources>

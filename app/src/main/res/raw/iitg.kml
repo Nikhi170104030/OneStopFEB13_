@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>IITG</name>
+    <description/>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>IIT Main Entrance</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.6865087,26.196494,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Market Complex']]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.68784,26.195317,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shiv Temple</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.6891024,26.196142,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>D Type Park</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.6892197,26.1968737,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>D-type Community Hall</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.6908324,26.1964074,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IIT Guwahati Viewpoint</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.6923558999999,26.1944194,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IIT Guwahati Conference Hall</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.692547,26.191117,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bhupen Hazarika Auditorium IITG</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.6930817,26.1910273,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Admin Block IIT</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.6920494,26.1902054,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IIT Guwahati Courier Service</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.6921601,26.1900294,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SBI Bank, IITG Branch.</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.6924309999999,26.1898802,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Library Canteen</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.6933805,26.1895417,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Siang Hostel</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.6967503,26.1893736,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lohit Hostel</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.6981166,26.189286,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Umiam Hostel</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            91.7021754,26.1887956,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

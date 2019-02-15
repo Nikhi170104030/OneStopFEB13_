@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.swc.onestop"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_logo_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.swc.onestop.Activities.SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.swc.onestop.MyDownloadManager"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <!--
+         The API key for Google Maps-based APIs is defined as a string resource.
+         (See the file "res/values/google_maps_api.xml").
+         Note that the API key is linked to the encryption key used to sign the APK.
+         You need a different API key for each encryption key, including the release key that is used to
+         sign the APK for publishing.
+         You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.swc.onestop.Activities.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name="com.swc.onestop.Activities.Outlook_API_Activity" />
+        <activity android:name="com.swc.onestop.Timings_activities.Ferry" />
+        <activity android:name="com.swc.onestop.Timings_activities.Internal_bus" />
+        <activity android:name="com.swc.onestop.Timings_activities.IITG_Bus" />
+        <activity android:name="com.swc.onestop.Activities.MapsActivity" />
+        <activity
+            android:name="com.swc.onestop.Activities.Main2Activity"
+            android:hardwareAccelerated="true"
+            android:label="@string/title_activity_main2" />
+        <activity android:name="com.swc.onestop.ui.ContactActivity" />
+        <activity
+            android:name="com.swc.onestop.ui.AllDetailActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name="com.swc.onestop.Activities.Timings_activity" />
+        <activity
+            android:name="com.swc.onestop.Activities.Mess_Menu"
+            android:label="@string/title_activity_mess__menu"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.swc.onestop.Activities.Internet_settings"
+            android:label="@string/title_activity_internet_settings"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.swc.onestop.Activities.Timetable"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.swc.onestop.Internet_settings.BrowSet"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.swc.onestop.Internet_settings.DCSet"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.swc.onestop.Internet_settings.IPSettings"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.swc.onestop.Internet_settings.LanSet"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.swc.onestop.Internet_settings.SkypeSet"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.swc.onestop.Activities.Complaints.ComplaintActivity" />
+        <activity android:name="com.swc.onestop.Activities.Complaints.AddComplaint" />
+        <activity android:name="com.swc.onestop.Activities.Complaints.SingleComplaintActivity" />
+        <activity
+            android:name="com.swc.onestop.Activities.AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:theme="@style/AppTheme" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.swc.onestop.com.squareup.picasso"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.swc.onestop.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity android:name="com.microsoft.aad.adal.AuthenticationActivity" >
+        </activity>
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.swc.onestop.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

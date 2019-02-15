@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.swc.onestop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
+        <activity
+            android:name=".Activities.SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".MyDownloadManager"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <!--
+         The API key for Google Maps-based APIs is defined as a string resource.
+         (See the file "res/values/google_maps_api.xml").
+         Note that the API key is linked to the encryption key used to sign the APK.
+         You need a different API key for each encryption key, including the release key that is used to
+         sign the APK for publishing.
+         You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Activities.Outlook_API_Activity" />
+        <activity android:name=".Timings_activities.Ferry" />
+        <activity android:name=".Timings_activities.Internal_bus" />
+        <activity android:name=".Timings_activities.IITG_Bus" />
+        <activity android:name=".Activities.MapsActivity" />
+        <activity
+            android:hardwareAccelerated="true"
+            android:name=".Activities.Main2Activity"
+            android:label="@string/title_activity_main2"
+            />
+        <activity android:name=".ui.ContactActivity" />
+        <activity
+            android:name=".ui.AllDetailActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name=".Activities.Timings_activity" />
+        <activity
+            android:name=".Activities.Mess_Menu"
+            android:label="@string/title_activity_mess__menu"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.Internet_settings"
+            android:label="@string/title_activity_internet_settings"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.Timetable"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Internet_settings.BrowSet"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Internet_settings.DCSet"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Internet_settings.IPSettings"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Internet_settings.LanSet"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Internet_settings.SkypeSet"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activities.Complaints.ComplaintActivity" />
+        <activity android:name=".Activities.Complaints.AddComplaint" />
+        <activity android:name=".Activities.Complaints.SingleComplaintActivity" />
+        <activity
+            android:name=".Activities.AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

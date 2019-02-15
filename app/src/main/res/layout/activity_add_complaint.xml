@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:background="@color/colorPrimary"
+            app:theme="@style/ToolbarTheme"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_white_black_24dp" >
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/complaints">
+
+            </ImageView>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/appbar"
+        android:layout_marginBottom="3dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:contentPadding="12dp"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="2dp"
+        layout_height="wrap_content"
+        layout_width="wrap_content"
+        android:id="@+id/cardview"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/iitgbus_tv"
+
+                android:layout_marginLeft="7dp"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF444444"
+                android:textSize="30dp"
+                android:text="New Complaint"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                >
+
+                <TextView
+                    android:fontFamily="@font/montserrat"
+                    android:singleLine="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:breakStrategy="simple"
+                    android:text="For any complaint related to Maintainence Section or Computer and Comm centre(CC) ,Log on to https://intranet.iitg.ernet.in/cb"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/sub"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+       android:layout_below="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="50">
+
+            <EditText
+                android:id="@+id/subject_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject"
+                android:inputType="text|textAutoCorrect|textShortMessage"
+                android:textSize="22sp"
+                />
+        </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/sub"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="200"
+         >
+
+        <EditText
+            android:maxLines="4"
+            android:id="@+id/body_et"
+            android:lines="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Let Your Heart Out!"
+            android:inputType="text|textAutoCorrect|textLongMessage"
+            style="@style/EditText.Complaint"
+            android:theme="@style/EditText.Complaint"
+            android:textSize="22sp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/addComButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD YOUR COMPLAINT"
+        android:background="@drawable/compaint_button"
+       />
+
+</RelativeLayout>

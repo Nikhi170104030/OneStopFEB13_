@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_icon"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_map_icon"
+        android:title="Map" />
+
+    <item
+        android:id="@+id/navigation_complaints"
+        android:icon="@drawable/ic_complain_icon"
+        android:title="Complaints" />
+    <item
+        android:id="@+id/navigation_timing"
+        android:icon="@drawable/timings_icon"
+        android:title="Timings" />
+
+</menu>

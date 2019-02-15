@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="titles">
+        <item>FEED</item>
+        <item>SAVED</item>
+
+    </string-array>
+    <array name="titles_contact">
+        <item>Gymkhana</item>
+        <item>Transport</item>
+        <item>Emergency</item>
+
+    </array>
+
+    <array name="complaints">
+        <item>Hostel</item>
+        <item>Mess</item>
+        <item>General</item>
+    </array>
+</resources>

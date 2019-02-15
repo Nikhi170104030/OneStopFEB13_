@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AboutUs">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:background="@color/colorPrimary"
+            app:theme="@style/ToolbarTheme"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_white_black_24dp" >
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/about">
+
+            </ImageView>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+       
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/mal_baseline_half"
+                android:paddingEnd="@dimen/mal_baseline"
+                android:paddingLeft="@dimen/mal_baseline_half"
+                android:paddingRight="@dimen/mal_baseline"
+                android:paddingStart="@dimen/mal_baseline_half"
+                android:paddingTop="@dimen/mal_baseline_half">
+
+                <ImageView
+                    android:id="@+id/mal_item_image"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/mal_baseline_half"
+                    android:layout_marginLeft="@dimen/mal_baseline_half"
+                    android:layout_marginRight="@dimen/mal_baseline_half"
+                    android:layout_marginStart="@dimen/mal_baseline_half"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@null"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_aboutus" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mal_item_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/mal_baseline_half"
+                        android:layout_marginStart="@dimen/mal_baseline_half"
+                        
+                        
+                        android:fontFamily="@font/montserrat"
+                        android:text="OneStop IITG"
+                        android:textSize="20sp"
+                        android:textColor="#FF444444" />
+
+                    <TextView
+                        android:id="@+id/mal_item_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/mal_baseline_half"
+                        android:layout_marginStart="@dimen/mal_baseline_half"
+                        android:layout_marginTop="-4dp"
+                        
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="#FF444444"
+                        android:text="\u00A9 2018 SWC"
+                        android:width="63dp" />
+
+                </LinearLayout>
+                
+                
+
+            </LinearLayout>
+                <LinearLayout
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/mal_baseline_half"
+                    android:paddingBottom="@dimen/mal_baseline_half"
+                    android:paddingStart="8dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/mal_action_item_image_width"
+                        android:layout_height="@dimen/mal_action_action_item_image_height"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/mal_baseline_half"
+                        android:layout_marginLeft="@dimen/mal_baseline"
+                        android:layout_marginRight="@dimen/mal_baseline_half"
+                        android:layout_marginStart="@dimen/mal_baseline"
+                        android:adjustViewBounds="false"
+                        android:contentDescription="@null"
+                        android:cropToPadding="false"
+                        android:src="@drawable/ic_info"
+                        android:scaleType="centerInside" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/mal_action_action_item_image_height"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/mal_baseline"
+                        android:layout_marginLeft="@dimen/mal_baseline"
+                        android:layout_marginRight="@dimen/mal_baseline"
+                        android:layout_marginStart="@dimen/mal_baseline"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="#FF444444"
+                           android:text="Version" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/feedback"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/mal_baseline_half"
+                    android:paddingBottom="@dimen/mal_baseline_half"
+                    android:paddingStart="8dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/mal_action_item_image_width"
+                        android:layout_height="@dimen/mal_action_action_item_image_height"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/mal_baseline_half"
+                        android:layout_marginLeft="@dimen/mal_baseline"
+                        android:layout_marginRight="@dimen/mal_baseline_half"
+                        android:layout_marginStart="@dimen/mal_baseline"
+                        android:adjustViewBounds="false"
+                        android:contentDescription="@null"
+                        android:cropToPadding="false"
+                        android:src="@drawable/ic_feedback"
+                        android:scaleType="centerInside" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/mal_action_action_item_image_height"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/mal_baseline"
+                        android:layout_marginLeft="@dimen/mal_baseline"
+                        android:layout_marginRight="@dimen/mal_baseline"
+                        android:layout_marginStart="@dimen/mal_baseline"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            
+                            android:text="Got any Feedback?"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="#FF444444"/>
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            
+                            android:text="We’d love to hear and improve :)" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/reportbug"
+                    android:clickable="true"
+                    android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/mal_baseline_half"
+                    android:paddingBottom="@dimen/mal_baseline_half"
+                    android:paddingStart="8dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/mal_action_item_image_width"
+                        android:layout_height="@dimen/mal_action_action_item_image_height"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/mal_baseline_half"
+                        android:layout_marginLeft="@dimen/mal_baseline"
+                        android:layout_marginRight="@dimen/mal_baseline_half"
+                        android:layout_marginStart="@dimen/mal_baseline"
+                        android:adjustViewBounds="false"
+                        android:contentDescription="@null"
+                        android:cropToPadding="false"
+                        android:src="@drawable/ic_bug"
+                        android:scaleType="centerInside" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/mal_action_action_item_image_height"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/mal_baseline"
+                        android:layout_marginLeft="@dimen/mal_baseline"
+                        android:layout_marginRight="@dimen/mal_baseline"
+                        android:layout_marginStart="@dimen/mal_baseline"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            
+                            android:text="Report Bugs"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="#FF444444"/>
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            
+                            android:text="We hate bugs! In mess food or our app" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/mal_baseline_half"
+                android:paddingEnd="@dimen/mal_baseline"
+                android:paddingLeft="@dimen/mal_baseline_half"
+                android:paddingRight="@dimen/mal_baseline"
+                android:paddingStart="@dimen/mal_baseline_half"
+                android:paddingTop="@dimen/mal_baseline_half">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/mal_baseline_half"
+                    android:layout_marginLeft="@dimen/mal_baseline_half"
+                    android:layout_marginRight="@dimen/mal_baseline_half"
+                    android:layout_marginStart="@dimen/mal_baseline_half"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@null"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#FF444444"
+                    android:text="Team" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mal_baseline_half"
+                android:paddingBottom="@dimen/mal_baseline_half"
+                android:paddingStart="8dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mal_action_item_image_width"
+                    android:layout_height="@dimen/mal_action_action_item_image_height"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/mal_baseline_half"
+                    android:layout_marginLeft="@dimen/mal_baseline"
+                    android:layout_marginRight="@dimen/mal_baseline_half"
+                    android:layout_marginStart="@dimen/mal_baseline"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@null"
+                    android:cropToPadding="false"
+                    android:src="@drawable/ic_team"
+                    android:scaleType="centerInside" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/mal_action_action_item_image_height"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/mal_baseline"
+                    android:layout_marginLeft="@dimen/mal_baseline"
+                    android:layout_marginRight="@dimen/mal_baseline"
+                    android:layout_marginStart="@dimen/mal_baseline"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        
+                        android:text="Team"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="#FF444444"/>
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#F2F2F2">
+
+            <LinearLayout
+                android:id="@+id/tushar"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mal_baseline_half"
+                android:paddingBottom="@dimen/mal_baseline_half"
+                android:paddingStart="8dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tusharpic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/sample"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FFFFFF"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/mal_action_action_item_image_height"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/mal_baseline"
+                    android:layout_marginLeft="@dimen/mal_baseline"
+                    android:layout_marginRight="@dimen/mal_baseline"
+                    android:layout_marginStart="@dimen/mal_baseline"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+
+                        android:textFontWeight="600"
+                        android:textColor="#FF444444"
+                        android:textSize="16dp"
+                        android:text="Tushar Yadav"
+                         />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="SWC Secretary" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nikhil"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mal_baseline_half"
+                android:paddingBottom="@dimen/mal_baseline_half"
+                android:paddingStart="8dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/nikhilpic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/sample"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FFFFFF"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/mal_action_action_item_image_height"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/mal_baseline"
+                    android:layout_marginLeft="@dimen/mal_baseline"
+                    android:layout_marginRight="@dimen/mal_baseline"
+                    android:layout_marginStart="@dimen/mal_baseline"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+
+                        android:textFontWeight="600"
+                        android:textColor="#FF444444"
+                        android:textSize="16dp"
+                        android:text="Gaddam Nikhil"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="Front-End and Back-End Developer" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ashwin"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mal_baseline_half"
+                android:paddingBottom="@dimen/mal_baseline_half"
+                android:paddingStart="8dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ashwinpic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/sample"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FFFFFF"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/mal_action_action_item_image_height"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/mal_baseline"
+                    android:layout_marginLeft="@dimen/mal_baseline"
+                    android:layout_marginRight="@dimen/mal_baseline"
+                    android:layout_marginStart="@dimen/mal_baseline"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+
+                        android:textFontWeight="600"
+                        android:textColor="#FF444444"
+                        android:textSize="16dp"
+                        android:text="Ashwin Kulkarni"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="Front-End Developer" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ankur"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mal_baseline_half"
+                android:paddingBottom="@dimen/mal_baseline_half"
+                android:paddingStart="8dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ankurpic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/sample"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FFFFFF"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/mal_action_action_item_image_height"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/mal_baseline"
+                    android:layout_marginLeft="@dimen/mal_baseline"
+                    android:layout_marginRight="@dimen/mal_baseline"
+                    android:layout_marginStart="@dimen/mal_baseline"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+
+                        android:textFontWeight="600"
+                        android:textColor="#FF444444"
+                        android:textSize="16dp"
+                        android:text="Ankur Ingake"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="Front-End Developer" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/anshunam"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mal_baseline_half"
+                android:paddingBottom="@dimen/mal_baseline_half"
+                android:paddingStart="8dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/anshumanpic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/sample"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FFFFFF"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/mal_action_action_item_image_height"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/mal_baseline"
+                    android:layout_marginLeft="@dimen/mal_baseline"
+                    android:layout_marginRight="@dimen/mal_baseline"
+                    android:layout_marginStart="@dimen/mal_baseline"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+
+                        android:textFontWeight="600"
+                        android:textColor="#FF444444"
+                        android:textSize="16dp"
+                        android:text="Anshuman Dhar"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="UX Developer" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/shivam"
+                android:clickable="true"
+                android:focusable="true"
+            
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mal_baseline_half"
+                android:paddingBottom="@dimen/mal_baseline_half"
+                android:paddingStart="8dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/shivampic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/sample"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FFFFFF"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/mal_action_action_item_image_height"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/mal_baseline"
+                    android:layout_marginLeft="@dimen/mal_baseline"
+                    android:layout_marginRight="@dimen/mal_baseline"
+                    android:layout_marginStart="@dimen/mal_baseline"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+
+                        android:textFontWeight="600"
+                        android:textColor="#FF444444"
+                        android:textSize="16dp"
+                        android:text="Shivam Kumar"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="Back-End Developer" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/vivek"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mal_baseline_half"
+                android:paddingBottom="@dimen/mal_baseline_half"
+                android:paddingStart="8dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/vivekpic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/sample"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FFFFFF"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/mal_action_action_item_image_height"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/mal_baseline"
+                    android:layout_marginLeft="@dimen/mal_baseline"
+                    android:layout_marginRight="@dimen/mal_baseline"
+                    android:layout_marginStart="@dimen/mal_baseline"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        
+                        android:textFontWeight="600"
+                        android:textColor="#FF444444"
+                        android:textSize="16dp"
+                        android:text="Vivek Raj"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        
+                        android:text="Back-End Developer" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rishab"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/mal_baseline_half"
+                    android:paddingBottom="@dimen/mal_baseline_half"
+                    android:paddingStart="8dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rishabpic"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/sample"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FFFFFF"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/mal_action_action_item_image_height"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/mal_baseline"
+                        android:layout_marginLeft="@dimen/mal_baseline"
+                        android:layout_marginRight="@dimen/mal_baseline"
+                        android:layout_marginStart="@dimen/mal_baseline"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+
+                            android:textFontWeight="600"
+                            android:textColor="#FF444444"
+                            android:textSize="16dp"
+                            android:text="Rishabh Sood"
+                            />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="UX Developer" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+        </LinearLayout>
+        </ScrollView>
+            </LinearLayout>

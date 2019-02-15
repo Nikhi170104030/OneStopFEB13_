@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        app:theme="@style/ToolbarTheme"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_arrow_white_black_24dp"  >
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/timings">
+
+        </ImageView>
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+    <LinearLayout
+        android:id="@+id/ferry_ll"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@drawable/timings_button"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <LinearLayout
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:fontFamily="@font/montserrat"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF444444"
+                android:textSize="30dp"
+                android:text="Ferry"/>
+
+            <ImageView
+                android:padding="15dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ferry_illustration" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/internalbus_ll"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@drawable/timings_button"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <LinearLayout
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:fontFamily="@font/montserrat"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF444444"
+            android:textSize="30dp"
+            android:text="Internal Bus"/>
+
+        <ImageView
+            android:padding="15dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/internal_bus_illustration" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/iitgbus_ll"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@drawable/timings_button"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:fontFamily="@font/montserrat"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF444444"
+            android:textSize="30dp"
+            android:text="IITG Bus"/>
+
+        <ImageView
+            android:padding="15dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/iitg_bus_illustration" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
