@@ -28,15 +28,15 @@
                 android:layout_margin="10sp"/>
 
 
-            <ImageView
-                android:layout_marginTop="7dp"
+            <ImageButton
+
                 android:id="@+id/dp2"
                 android:layout_width="30sp"
                 android:layout_height="30sp"
                 android:layout_alignTop="@+id/dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="16sp"
-                card_view:srcCompat="@drawable/ic_star" />
+                android:background="@drawable/ic_star_state" />
 
             <TextView
                 android:id="@+id/title_name"

@@ -354,12 +354,12 @@ public final class R {
         public static final int abc_textfield_search_material = 0x7f080059;
         public static final int ic_action_mic = 0x7f08009d;
         public static final int ic_clear = 0x7f0800a6;
-        public static final int ic_more_vert_black_24dp = 0x7f0800ba;
-        public static final int ic_up = 0x7f0800c8;
-        public static final int search_bg = 0x7f0800f4;
-        public static final int search_bg_shadow = 0x7f0800f5;
-        public static final int search_bg_transparent = 0x7f0800f6;
-        public static final int search_frame = 0x7f0800f8;
+        public static final int ic_more_vert_black_24dp = 0x7f0800bb;
+        public static final int ic_up = 0x7f0800ca;
+        public static final int search_bg = 0x7f0800f6;
+        public static final int search_bg_shadow = 0x7f0800f7;
+        public static final int search_bg_transparent = 0x7f0800f8;
+        public static final int search_frame = 0x7f0800fa;
     }
     public static final class id {
         private id() {}

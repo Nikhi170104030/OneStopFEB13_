@@ -1,12 +1,18 @@
 package com.swc.onestop.MainActivity_Models;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.graphics.PorterDuff;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,7 +38,7 @@ public class CustomAdapter_fav extends RecyclerView.Adapter<CustomAdapter_fav.My
     static FirebaseFirestore db;
     SessionManager sessionManager;
     private CustomAdapter_fav adapter;
-
+    private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView textViewtitle;
@@ -40,7 +46,7 @@ public class CustomAdapter_fav extends RecyclerView.Adapter<CustomAdapter_fav.My
         TextView textViewinfo;
         ImageView imageViewdesc;
         CircleImageView imageViewdp;
-        ImageView del;
+        ImageButton del;
 
         public MyViewHolder(View itemView) {
             super(itemView);
@@ -49,7 +55,7 @@ public class CustomAdapter_fav extends RecyclerView.Adapter<CustomAdapter_fav.My
             this.textViewSubtitle = (TextView) itemView.findViewById(R.id.subtitle);
             this.textViewinfo = (TextView) itemView.findViewById(R.id.info);
             this.imageViewdesc = (ImageView)itemView.findViewById(R.id.image_desc);
-            this.del = (ImageView) itemView.findViewById(R.id.dp2);
+            this.del = (ImageButton) itemView.findViewById(R.id.dp2);
             Log.d("CustomAdapter","FindviewbyId Done");
 
 
@@ -87,35 +93,61 @@ public class CustomAdapter_fav extends RecyclerView.Adapter<CustomAdapter_fav.My
         ImageView imageViewdesc = holder.imageViewdesc;
         ImageView imageViewdp= holder.imageViewdp;
         ImageView del=holder.del;
-        del.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_remove));
+        del.setBackground(context.getResources().getDrawable(R.drawable.ic_close_state));
+
 
         del.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                v.startAnimation(buttonClick);
 
-                    db.collection("feed").document(dataSet.get(listPosition).getID()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-                        @Override
-                        public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                            if (task.isSuccessful()) {
-                                DocumentSnapshot document = task.getResult();
-                                if (document.exists()) {
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(context);
+                builder1.setMessage("Are you sure you want unsave?");
+                builder1.setCancelable(true);
 
-                                    db.collection("users").document(sessionManager.getUserDetails().get("id"))
-                                            .collection("fav").document(dataSet.get(listPosition).getID()).delete();
-                                    dataSet.remove(listPosition);
-                                    adapter.notifyDataSetChanged();
+                builder1.setPositiveButton(
+                        "Yes",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                db.collection("feed").document(dataSet.get(listPosition).getID()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                                        if (task.isSuccessful()) {
+                                            DocumentSnapshot document = task.getResult();
+                                            if (document.exists()) {
 
-                                   Toast.makeText(holder.del.getContext(), "Removed Post", Toast.LENGTH_SHORT).show();
-                                } else {
+                                                db.collection("users").document(sessionManager.getUserDetails().get("id"))
+                                                        .collection("fav").document(dataSet.get(listPosition).getID()).delete();
+                                                dataSet.remove(listPosition);
+                                                adapter.notifyDataSetChanged();
+
+                                                Toast.makeText(holder.del.getContext(), "Removed Post", Toast.LENGTH_SHORT).show();
+                                            } else {
 //                                Log.d(TAG, "No such document");
-                                }
-                            } else {
+                                            }
+                                        } else {
 //                            Log.d(TAG, "get failed with ", task.getException());
-                            }
+                                        }
 
-                        }
-                    });
-                    notifyDataSetChanged();
+                                    }
+                                });
+                                notifyDataSetChanged();
+
+
+                                dialog.cancel();
+                            }
+                        });
+
+                builder1.setNegativeButton(
+                        "No",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+
+                AlertDialog alert11 = builder1.create();
+                alert11.show();
 
 
 

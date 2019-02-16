@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,6 +37,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
 
 
+
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView textViewtitle;
@@ -42,7 +45,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         TextView textViewinfo;
         ImageView imageViewdesc;
         CircleImageView imageViewdp;
-        ImageView save;
+        ImageButton save;
 
 
         public MyViewHolder(View itemView) {
@@ -52,7 +55,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             this.textViewSubtitle = (TextView) itemView.findViewById(R.id.subtitle);
             this.textViewinfo = (TextView) itemView.findViewById(R.id.info);
             this.imageViewdesc = (ImageView)itemView.findViewById(R.id.image_desc);
-            this.save = (ImageView)itemView.findViewById(R.id.dp2);
+            this.save = (ImageButton)itemView.findViewById(R.id.dp2);
             Log.d("CustomAdapter","FindviewbyId Done");
 
 
@@ -95,7 +98,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Testing CLick", Toast.LENGTH_SHORT).show();
+
+              //  Toast.makeText(context, "Testing CLick", Toast.LENGTH_SHORT).show();
 
                     Toast.makeText(holder.save.getContext(),"Added to Favourites",Toast.LENGTH_SHORT).show();
                     db.collection("feed").document(dataSet.get(listPosition).getID()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {

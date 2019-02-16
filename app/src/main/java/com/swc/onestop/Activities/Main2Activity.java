@@ -556,6 +556,8 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
                     if(data2.size()!=0){
                        no_saved.setVisibility(View.INVISIBLE);
                     }
+                    else
+                        no_saved.setVisibility(View.VISIBLE);
 
                 }
             });

@@ -1282,6 +1282,7 @@ drawable ic_bug
 drawable ic_bus
 drawable ic_call_24dp
 drawable ic_clear
+drawable ic_close_state
 drawable ic_comment_black_24dp
 drawable ic_complain_icon
 drawable ic_delete
@@ -1313,6 +1314,7 @@ drawable ic_save
 drawable ic_search_black_24dp
 drawable ic_send_black_24dp
 drawable ic_star
+drawable ic_star_state
 drawable ic_team
 drawable ic_timings_icon
 drawable ic_up
@@ -1371,6 +1373,7 @@ drawable skype1
 drawable skype_settings
 drawable spinner_background
 drawable spinner_drawable
+drawable state_pressed_ripple
 drawable timetable
 drawable timings
 drawable timings_button

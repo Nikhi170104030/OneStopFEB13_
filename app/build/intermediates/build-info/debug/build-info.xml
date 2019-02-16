@@ -6,33 +6,39 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.3.0"
-    timestamp="1550256141493"
+    timestamp="1550304881890"
     token="-656128523334586575"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="596" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="27" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="13" />
     <task
         name="verifier"
-        duration="0" />
+        duration="3" />
 
     <artifact
-        location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-        type="SPLIT" />
+        location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
         build-mode="FULL"
-        timestamp="1550251929670"
+        timestamp="1550303986060"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
@@ -42,9 +48,6 @@
             type="SPLIT" />
         <artifact
             location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
@@ -65,16 +68,16 @@
             location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
             location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1550255953193"
+        timestamp="1550304814356"
         verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
         <artifact
             location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
@@ -94,22 +97,22 @@
             location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
             location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
             location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
+        <artifact
+            location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
     </build>
     <build
         build-mode="HOT_WARM"
-        timestamp="1550256141493"
+        timestamp="1550304881890"
         verifier="COMPATIBLE" >
         <artifact
-            location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-            type="SPLIT" />
+            location="/home/nicky/Desktop/OneStopFEB13/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
